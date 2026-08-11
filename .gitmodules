@@ -1,0 +1,4 @@
+[submodule "droidian"]
+	path = droidian/common_fragments
+	url = https://github.com/droidian-devices/common_fragments.git
+	branch = 4.14-android

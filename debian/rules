@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+include /usr/share/linux-packaging-snippets/kernel-snippet.mk
+
+export PLATFORM_VERSION=11
+export ANDROID_MAJOR_VERSION=r
+export ARCH=arm64
+
+export KAFLAGS += -I$(CURDIR)
+
+%:
+	dh $@
