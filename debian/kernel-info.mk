@@ -155,14 +155,14 @@ DEVICE_VBMETA_IS_SAMSUNG = 1
 
 # boot partition size. If specified, an AVB footer will be added at the
 # end of the bootimage.
-# KERNEL_BOOTIMAGE_PARTITION_SIZE = 37748736
+KERNEL_BOOTIMAGE_PARTITION_SIZE = 55574528
 
 ########################################################################
 # Automatic flashing on package upgrades
 ########################################################################
 
 # Whether to enable kernel upgrades on package upgrades. Use 0 (no) or 1.
-FLASH_ENABLED = 1
+FLASH_ENABLED = 0
 
 # If your device is treble-ized, but aonly, you should set the following to
 # 1 (yes).
@@ -252,7 +252,7 @@ BUILD_PATH = /buildd/sources/toolchain/gcc/linux-x86/aarch64/aarch64-linux-andro
 # can have this section empty, unless cross-building.
 # Added clang-android-10.0-r370808 for Android 11 kernel compilation.
 # gcc-4.9 toolchain is kept for binutils/linking support.
-DEB_TOOLCHAIN = linux-initramfs-halium-generic:arm64, binutils-aarch64-linux-gnu
+DEB_TOOLCHAIN = linux-initramfs-halium-generic:armhf, binutils-aarch64-linux-gnu
 
 # Where we're building on
 DEB_BUILD_ON = amd64
